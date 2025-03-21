@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ABhimanyu1280/36studio.git'
+                git branch: 'main', url: 'https://github.com/ABhimanyu1280/36studio.git'
             }
         }
         stage('Build') {
